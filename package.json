@@ -1,0 +1,17 @@
+{
+  "name": "ftpcdi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "edmilson1968",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "ftp": "^0.3.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21"
+  }
+}
