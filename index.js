@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World from Azure DevOps!')
 })
 
 app.get('/cdi/:data', (req, res) => {
@@ -53,3 +53,5 @@ function myRound (num, n) {
     var m = Math.pow(10, n) ;
     return Math.round(num * m ) / m;
 }
+
+module.exports = app;

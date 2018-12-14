@@ -2,3 +2,4 @@ package-lock.json
 node_modules
 .DS_Store
 .vs_studio
+out/test-results.xml

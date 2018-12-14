@@ -5,12 +5,17 @@
 $ mkdir -f /code/finance
 $ cd /code/finance
 $ git clone https://github.com/edmilson1968/ftpcdi.git
-$ docker run -it -w /finance/ftpcdi -v /code/finance:/finance node:8-alpine npm install
+$ docker run --rm -it -w /finance/ftpcdi -v /code/finance:/finance node:8-alpine npm install
+```
+
+#### executing tests
+```
+$ docker run --rm -it -w /finance/ftpcdi -v /code/finance:/finance node:8-alpine npm test
 ```
 
 #### running using Docker
 ```
-$ docker run -d -it -p 3000:3000 -w /finance/ftpcdi -v /code/finance:/finance node:8-alpine node index.js
+$ docker run -d -it -p 3000:3000 -w /finance/ftpcdi -v /code/finance:/finance node:8-alpine npm start
 ```
 
 #### consuming services
